@@ -17,7 +17,7 @@ Write a query to find the smallest value of the Northern Latitudes greater than 
 */
 
 --Solution
-
-SELECT ROUND(MIN(LAT_N),4) 
+--updated solution
+SELECT cast(ROUND(MIN(LAT_N),4) as decimal(10,4))
 FROM STATION
 WHERE LAT_N > 38.7780;
